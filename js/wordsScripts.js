@@ -59,16 +59,6 @@ $(document).ready(function(){
             })
         });
     });
-    // complete_flickr_apiUrl = flickr_apiUrl_beginning +flickr_apiUrl_apiKey+'/'+ '&tags=' +searchWord + flickr_apiUrl_ending;
-    // $.getJSON(complete_flickr_apiUrl, ( flickrResponse)=>{
-    //         $.each(flickrResponse.photos.photo,(i,myresult)=>{
-    //            console.log(myresult)
-    //            if(myresult.width==selected_size){
-    //                $("#results").append('<p>'+flickrResponse.title + '</p></p><p><a href="'+myresult.url+'" target="_blank"><img src="'+myresult_size.source+'"/></a></p>');
-    //                }
-
-    //            })
-    //         })
 }
 $("#search").keyup(function(){
     if(event.keyCode == 13){

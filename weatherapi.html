@@ -36,6 +36,7 @@
              <ul class="dropdown-menu">
                <li><a href="locationapi.html">GoogleMaps API</a></li>
                <li><a href="weatherapi.html">Weather API </a></li>
+               <li><a href="weatherapiWidget.html">Weather API Widget </a></li>
                <li><a href="wordsapi.html">Words API </a></li>
                <!-- <li><a href="#">Something else here</a></li>
                <li role="separator" class="divider"></li>
@@ -50,30 +51,25 @@
    </nav>
  <div class="container">
 <div class="row ">
-    <div class="col-xs-12 .col-md-8">
-        <form id="weatherSearch">
-            <input id="weatherLocation" type="search" placeholder="Search">
-            <div type="submit" id="weatherBtn" class="btn btn-success"> search</div>
-        </form>
+    <div class="col-xs-6 .col-md-6">
+            <input type="text" id="search" placeholder="search" class="form-control">
+    </div>
+    <div class="col-xs-6 col-md-6">
+      <select name="language" id="lang">
+        <option value="ar">Arabic/عربي</option>
+        <option value="en">English</option>
+        <option value="fa">Farsi/فارسي</option>
+        <option value="fr">French/Français</option>
+        <option value="de">German/Deutsch</option>
+        <option value="ru">Russian/русский</option>
+        <option value="es">Spanish/Espanyol</option>
+        <option value="se" selected>Swedish/Svenska</option>
+      </select>
     </div>
 </div>
 <div class="row">
-    <div id="results" class="col-8"></div>
-    <div class="col-4"></div>
+  <div id="results"></div>
 </div>
-
-
- </div>
-
-
-
-
-
-
-
-
-
-
-
+</div>
 </body>
 </html>
